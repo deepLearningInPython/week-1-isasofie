@@ -34,7 +34,7 @@ def step(num):
 # Your code here:
 # -----------------------------------------------
 
-def ReLU(array, cutoff = 0):
+def ReLu(array, cutoff = 0):
     return np.where(array < cutoff, cutoff, array)
 
 
@@ -56,7 +56,7 @@ def ReLU(array, cutoff = 0):
 
 def neural_net_layer(twodim, onedim):
     new = np.matmul(twodim, onedim)
-    return ReLU(new)
+    return ReLu(new)
 
 
 
