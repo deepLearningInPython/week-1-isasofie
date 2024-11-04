@@ -34,8 +34,8 @@ def step(num):
 # Your code here:
 # -----------------------------------------------
 
-def ReLu(numar, cutoff = 0):
-   return np.where(numar < cutoff, cutoff, numar)
+def ReLu(array, cutoff = 0):
+   return np.where(array < cutoff, cutoff, array)
 
 
     
