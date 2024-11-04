@@ -10,7 +10,7 @@ import numpy as np
 #If the number is larger than zero, the function should return 1, otherwise is should return -1.
 #The name of the function should be step
 
-# Your code here:
+# Your code here:sdfasdasd
 # -----------------------------------------------
 
 
@@ -35,7 +35,10 @@ def step(num):
 # -----------------------------------------------
 
 def ReLu(numar, cutoff = 0):
-    return np.maximum(numar, cutoff)
+   return np.where(numar < cutoff, cutoff, numar)
+
+
+    
 
 
 # -----------------------------------------------
@@ -52,8 +55,9 @@ def ReLu(numar, cutoff = 0):
 # -----------------------------------------------
 
 def neural_net_layer(twodim, onedim):
-    new = np.multiply(twodim, onedim)
+    new = np.matmul(twodim, onedim)
     return ReLu(new)
+
 
 
 # ------------------------------------------
